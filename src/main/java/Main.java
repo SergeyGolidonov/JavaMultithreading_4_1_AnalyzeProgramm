@@ -31,15 +31,15 @@ public class Main {
 
         Thread b = new Thread(() -> {
             char letter = 'b';
-            int maxA = findMaxCharCount(queueA, letter);
-            System.out.println("Max qty of " + letter + " int all texts: " + maxA);
+            int maxB = findMaxCharCount(queueB, letter);
+            System.out.println("Max qty of " + letter + " int all texts: " + maxB);
         });
         b.start();
 
         Thread c = new Thread(() -> {
             char letter = 'c';
-            int maxA = findMaxCharCount(queueA, letter);
-            System.out.println("Max qty of " + letter + " int all texts: " + maxA);
+            int maxC = findMaxCharCount(queueC, letter);
+            System.out.println("Max qty of " + letter + " int all texts: " + maxC);
         });
         c.start();
 
